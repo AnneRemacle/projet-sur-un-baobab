@@ -14,13 +14,13 @@
 
 ###Concurrence
 
-- WWF: [http://www.wwf.be/fr/](http://)
-- Unicef: [http://www.unicef.org/french/](http://)
-- Greenpeace: [http://www.greenpeace.org/belgium/fr/](http://)
-- Médecins sans frontières: [http://www.msf-azg.be/fr/node/9297](http://)
-- Croix Rouge: [http://www.croix-rouge.be/](http://)
-- Oxfam: [http://www.oxfam.be/](http://)
-- 11.11.11: [http://www.cncd.be/](http://)
+- WWF: [http://www.wwf.be/fr/](http://www.wwf.be/fr/)
+- Unicef: [http://www.unicef.org/french/](http://www.unicef.org/french/)
+- Greenpeace: [http://www.greenpeace.org/belgium/fr/](http://www.greenpeace.org/belgium/fr/)
+- Médecins sans frontières: [http://www.msf-azg.be/fr/node/9297](http://www.msf-azg.be/fr/node/9297)
+- Croix Rouge: [http://www.croix-rouge.be/](http://www.croix-rouge.be/)
+- Oxfam: [http://www.oxfam.be/](http://www.oxfam.be/)
+- 11.11.11: [http://www.cncd.be/](http://www.cncd.be/)
 
 ####Points communs
 
