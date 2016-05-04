@@ -1,0 +1,72 @@
+/* Sur un baobab
+ *
+ * /sass/components/_footer.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+
+.footer {
+    height: 450px;
+    background: url("../../assets/img/footer-bg.png");
+    background-size: cover;
+    color: $links;
+    &-col {
+        display: inline-block;
+        padding-top: 40px;
+        vertical-align: top;
+        &__right {
+            text-align: right;
+        }
+    }
+    &__infos {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    &__heading, .footer__link {
+        text-decoration: none;
+        color:$links;
+        display: block;
+    }
+    &__heading {
+        display: inline-block;
+        font-family: $didactStack;
+        font-size: 28px;
+        margin: 30px 0 10px;
+        &-top {
+            vertical-align: top;
+        }
+    }
+    &__heading:hover {
+        color: $laborTextColor;
+        transition: .3s ease-in;
+    }
+    &__link {
+        width: 330px;
+        display: inline-block;
+    }
+    &__link:hover {
+        color: $laborTextColor;
+        transition: .3s ease-in;
+    }
+    &__text {
+        &--mail {
+            padding-bottom: 10px;
+        }
+    }
+    &__socials {
+        display: inline-block;
+        margin-top: 105px;
+        &--link {
+            font-size: 35px;
+            text-decoration: none;
+            color: $links;
+            padding: 0 5px;
+            font-family: 'Glyphs';
+        }
+        &--link:hover {
+            color: $laborTextColor;
+            transition: .3s ease-in;
+        }
+    }
+}

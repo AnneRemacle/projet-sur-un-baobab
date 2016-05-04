@@ -1,0 +1,64 @@
+/* Sur un baobab
+ *
+ * /sass/components/_about-pictures.scss
+ *
+ * coded by Anne
+ * started at 29/04/2016
+ */
+
+.pictures {
+    position: relative;
+    margin-bottom: 11.5em;
+    &__heading {
+
+    }
+    &__gallery {
+        width: 100%;
+        overflow:hidden;
+        display: inline-block;
+        position: relative;
+
+    }
+    &__nav {
+        display: inline-block;
+        position: absolute;
+        top:50%;
+        margin-top: .25em;
+        text-decoration: none;
+        color: $bgButtons;
+        font-size: 4em;
+        border: none;
+        background: transparent;
+        cursor:pointer;
+    }
+    &__previous {
+        left: -5%;
+        z-index:3;
+    }
+    &__next {
+        right:-5%;
+    }
+    &__cadre {
+        width: 200%;
+        display: inline-block;
+        position: relative;
+        left: 0;
+    }
+    &__pics {
+        display: inline;
+        &--img {
+            width: 311px;
+            height: auto;
+        }
+    }
+    &__pics:not(:last-child) {
+        margin-right: 1.777em;
+    }
+    &__button {
+        width: 46.5%;
+        margin-top: 2.222em;
+        position: absolute;
+        right:0;
+    }
+
+}

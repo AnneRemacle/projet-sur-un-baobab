@@ -1,0 +1,55 @@
+/* Sur un baobab
+ *
+ * /sass/components/_actus.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+
+ .actus {
+     position: relative;
+     margin-bottom: 8.888em; /*160px*/
+     &__heading {
+         display: block;
+     }
+     &__table {
+         display: table;
+         table-layout: fixed;
+         width: 100%;
+         border-collapse: separate;
+         border-spacing: 1.777em 0 ; /*32px*/
+         margin-left: -3.2%;
+     }
+     &__article {
+        display: table-cell;
+        width:31.3%; /*313px*/
+     }
+     &__button {
+         display: block;
+         width: 46.5%;
+         margin-top: 2.083em; /*75px/36*/
+         position: absolute;
+         right:-3.2%;
+     }
+ }
+
+ .article {
+     &__img {
+        width: 100%;
+        height: auto;
+     }
+     &__title {
+        margin: 1.388em 0 4%; /*25px*/
+        font-family: $didactStack;
+        font-size: 1.333em;
+     }
+     &__text {
+         &--link {
+            display: block;
+            text-align: right;
+            text-decoration: none;
+            color: $laborTextColor;
+            margin-top: 1.666em; /*30px*/
+         }
+     }
+ }

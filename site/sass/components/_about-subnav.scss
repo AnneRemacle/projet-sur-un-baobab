@@ -1,0 +1,23 @@
+/* Sur un baobab
+ *
+ * /sass/components/_subnav.scss
+ *
+ * coded by Anne
+ * started at 29/04/2016
+ */
+
+ .subnav {
+     &__link {
+         text-decoration: none;
+         color: $laborTextColor;
+         text-transform: uppercase;
+         font-family: $didactStack;
+         font-size: 1.111em; /*20px*/
+         padding: 1.111em;
+         border-radius: 10px;
+         box-shadow: -2px -2px 1px 0px rgba(0, 0, 0, 0.3);
+     }
+     &__link:hover {
+         background: rgba(243, 148, 21, 0.5);
+     }
+ }

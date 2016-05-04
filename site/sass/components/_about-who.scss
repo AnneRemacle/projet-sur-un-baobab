@@ -1,0 +1,54 @@
+/* Sur un baobab
+ *
+ * /sass/components/_about-who.scss
+ *
+ * coded by Anne
+ * started at 29/04/2016
+ */
+
+ .who {
+     &__heading {
+
+     }
+     &__left {
+         width: 48.5%;/*485/1000*100*/
+         float:left;
+     }
+     &__right {
+         width: 48.5%;/*485/1000*100*/
+         float:right;
+     }
+ }
+
+ .subsection {
+     &__cadre {
+         margin-bottom: 1.666em; /*30px*/
+     }
+     &__img {
+         width: 149px;
+         height: auto;
+         border: 4px solid $bgButtonsHover;
+         border-radius: 100%;
+         display: inline-block;
+         vertical-align: bottom;
+     }
+     &__heading {
+         font-family: $didactStack;
+         font-size: 1.444em; /*20px*/
+         display: inline-block;
+         width: 11.5%; /*115px*/
+         vertical-align: bottom;
+         margin-left: 2%;
+         line-height: 1.2;
+     }
+     &__text {
+        margin-bottom: 1.666em;
+     }
+     &__link {
+         text-decoration: none;
+         color: $laborTextColor;
+     }
+     &__link:hover {
+         text-decoration: underline;
+     }
+ }

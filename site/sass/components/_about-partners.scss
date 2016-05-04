@@ -1,0 +1,38 @@
+/* Sur un baobab
+ *
+ * /sass/components/_about-partners.scss
+ *
+ * coded by Anne
+ * started at 29/04/2016
+ */
+
+.partners {
+    background: $secondBg url("../../assets/img/motif-section-droite.png") right top no-repeat;
+    &__content {
+        width: 71%;
+        margin: 0 auto;
+    }
+    &__heading {
+    }
+    &__logos {
+        width: 100%;
+        &--item {
+            display: inline-block;
+            width: 13.9%;
+            line-height: 2em;
+        }
+        &--item + .partners__logos--item {
+            margin-left: 1.2em;
+            margin-bottom: 2em;
+        }
+    }
+    &__logo {
+        text-align: center;
+        background: $laborTextColor;
+        text-decoration: none;
+        color:$links;
+        font-size: 2em;
+        padding: .5em;
+        width: 100%;
+    }
+}

@@ -1,0 +1,55 @@
+/* Sur un baobab
+ *
+ * /sass/components/_about-what.scss
+ *
+ * coded by Anne
+ * started at 29/04/2016
+ */
+
+ .what {
+     background: $secondBg url("../../assets/img/motif-section.png") left top no-repeat;
+     &__content {
+         width: 71%;
+         margin: 0 auto;
+     }
+     &__heading {
+
+     }
+     &__top {
+         &-left {
+            width: 48.4%;
+            float: left;
+         }
+         &-right {
+            width: 48.4%;
+            float: right;
+            margin-left: 3.2%;
+         }
+     }
+     &__bottom {
+         &-left {
+            width: 48.4%;
+            float:left;
+         }
+         &-right {
+            width: 48.4%;
+            float:right;
+            margin-left: 3.2%;
+         }
+     }
+
+     &__text {
+        margin-bottom: 1.388em; /*25px*/
+     }
+     &__figure {
+         display: block;
+         width: 48.5%; /*485px*/
+         margin: 0 auto;
+         padding: 1.388em 0;
+         &--img {
+            width: 100%;
+            height: auto;
+            text-align: center;
+         }
+     }
+ }

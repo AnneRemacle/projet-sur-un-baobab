@@ -1,0 +1,28 @@
+/* Sur un baobab
+ *
+ * /sass/components/_support.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+
+.support {
+    background: url("../../assets/img/bg-support.jpg") center no-repeat;
+    background-size: cover;
+    height: 36.111em; /*650px*/
+    &__heading {
+        display: inline-block;
+        color: $links;
+        font-size: 4em; /*72px*/
+        width: 48.4%; /*484px */
+        text-align: left;
+        text-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+        margin-left: 20%; /*200px*/
+    }
+    &__button {
+        width: 33.214%;
+        display: block;
+        margin-top: 4.722em; /*85px*/
+        margin-left: 20%; /*200px*/
+    }
+}

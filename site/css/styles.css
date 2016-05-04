@@ -1,0 +1,640 @@
+/* Sur un Baobab
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+/* Sur un baobab
+ *
+ * /sass/settings/_colors.scss - variables for colors
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+/* Sur un baobab
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+@font-face {
+  font-family: 'Glyphs';
+  src: url("../../assets/fonts/fontawesome/fontawesome-webfont.eot");
+  src: url("../../assets/fonts/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/fontawesome/fontawesome-webfont.woff2") format("woff2"), url("../../assets/fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("../../assets/fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("../../assets/fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Sur un baobab
+ *
+ * /sass/tools/_utils.scss - Small utilities
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.hidden {
+  display: none; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+.active {
+  color: #2a2a2a; }
+
+/* CV Anne
+ *
+ * /sass/generic/_meyer-reset.scss - Eric Meyer's CSS reset - http://meyerweb.com/eric/tools/css/reset/
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* CV Anne
+ *
+ * /sass/generic/_box-sizing.scss - box-sizing reset
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* Sur un baobab
+ *
+ * /sass/base/_root.scss - Base styles for root element
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+body {
+  width: 100%;
+  background: #e9e2c6;
+  font: normal 18px/1.5 "Arimo", Arial, sans-serif;
+  color: #2a2a2a; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_header.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.header {
+  background-size: cover;
+  width: 100%;
+  height: 27.777em;
+  /* 500/18 */
+  position: relative;
+  font-family: "Didact Gothic", "Calibri", "Optima", Arial, sans-serif; }
+  .header-home {
+    background: transparent url("../../assets/img/bg-home.jpg") center no-repeat; }
+  .header-about {
+    background: transparent url("../../assets/img/bg-about.jpg") center no-repeat; }
+  .header__logo {
+    width: 20%;
+    /*280px*/
+    border-radius: 100%;
+    position: relative;
+    z-index: 3;
+    top: 5.55em;
+    left: 10%;
+    /*28px*/ }
+    .header__logo--img {
+      width: 100%;
+      height: auto; }
+  .header__nav {
+    background: #ff9500;
+    width: 100%;
+    height: 7.388em;
+    /*133/18*/
+    text-align: right;
+    padding-right: 14.28%;
+    /*200px*/
+    position: absolute;
+    top: 9.722em;
+    /*175/18*/ }
+    .header__nav--item {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      font-size: 1.388em;
+      /*25/18*/
+      line-height: 6em;
+      /*133px*/
+      width: 12.357%;
+      /*173px*/
+      text-align: right;
+      text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.7); }
+    .header__nav--item:hover {
+      background: url("../../assets/img/mandala-vert.png") no-repeat;
+      background-position: right top;
+      transition: .3s ease-in-out; }
+  .header__button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.388em;
+    /*25/18*/
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    background: #52853e;
+    padding: 0.444em 3.57%;
+    position: absolute;
+    bottom: 0;
+    right: 2%; }
+  .header__button:hover {
+    background: #ff9500 url("../../assets/img/mandala-vert.png") no-repeat;
+    background-position: right top;
+    transition: .3s ease-in-out; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_content.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.content__heading {
+  font-size: 2.666em;
+  /*48px*/
+  font-family: "Didact Gothic", "Calibri", "Optima", Arial, sans-serif;
+  margin-bottom: 1.111em;
+  /*20/18*/ }
+
+.content__section {
+  padding: 4.444em 0;
+  /*80/18*/ }
+  .content__section--button {
+    display: inline-block;
+    background: #f39415;
+    text-align: center;
+    padding: 0.555em 0;
+    /*20px/36*/
+    border-radius: 9px;
+    text-decoration: none;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    color: #2a2a2a;
+    font-family: "Didact Gothic", "Calibri", "Optima", Arial, sans-serif;
+    font-size: 2em;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.7); }
+  .content__section--button:hover {
+    background: #52853e url("../../assets/img/mandala-button.png") no-repeat;
+    background-position: right top;
+    background-size: contain;
+    color: #ffffff;
+    transition: .25s ease-in-out;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5); }
+
+.content__subnav {
+  text-align: center;
+  padding: 4.444em 0 0;
+  /*80px*/ }
+
+.group, .actus, .project {
+  width: 71%;
+  /**/
+  margin: 0 auto; }
+
+/*page about*/
+.subnav, .who, .pictures {
+  width: 71%;
+  /**/
+  margin: 0 auto; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_group.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.group__left {
+  width: 48.5%;
+  /*485/1000*100*/
+  float: left; }
+
+.group__text {
+  margin-bottom: 2.222em;
+  /*40/18*/ }
+
+.group__right {
+  width: 35%;
+  /*350/1000*100*/
+  height: auto;
+  float: right; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_actus.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.actus {
+  position: relative;
+  margin-bottom: 8.888em;
+  /*160px*/ }
+  .actus__heading {
+    display: block; }
+  .actus__table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 1.777em 0;
+    /*32px*/
+    margin-left: -3.2%; }
+  .actus__article {
+    display: table-cell;
+    width: 31.3%;
+    /*313px*/ }
+  .actus__button {
+    display: block;
+    width: 46.5%;
+    margin-top: 2.083em;
+    /*75px/36*/
+    position: absolute;
+    right: -3.2%; }
+
+.article__img {
+  width: 100%;
+  height: auto; }
+
+.article__title {
+  margin: 1.388em 0 4%;
+  /*25px*/
+  font-family: "Didact Gothic", "Calibri", "Optima", Arial, sans-serif;
+  font-size: 1.333em; }
+
+.article__text--link {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #2a2a2a;
+  margin-top: 1.666em;
+  /*30px*/ }
+
+/* Sur un baobab
+ *
+ * /sass/components/_support.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.support {
+  background: url("../../assets/img/bg-support.jpg") center no-repeat;
+  background-size: cover;
+  height: 36.111em;
+  /*650px*/ }
+  .support__heading {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 4em;
+    /*72px*/
+    width: 48.4%;
+    /*484px */
+    text-align: left;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-left: 20%;
+    /*200px*/ }
+  .support__button {
+    width: 33.214%;
+    display: block;
+    margin-top: 4.722em;
+    /*85px*/
+    margin-left: 20%;
+    /*200px*/ }
+
+/* Sur un baobab
+ *
+ * /sass/components/_project.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.project__heading {
+  display: block; }
+
+.project__video {
+  display: inline-block;
+  width: 49%;
+  /*490px*/
+  vertical-align: middle; }
+
+.project__title {
+  display: block;
+  font-size: 1.388em;
+  /*25px*/
+  font-family: "Didact Gothic", "Calibri", "Optima", Arial, sans-serif;
+  margin-top: 0.833em;
+  /*15/18*/ }
+
+.project__button {
+  width: 46.5%;
+  vertical-align: middle;
+  margin-left: 3.2%;
+  /*32px*/ }
+
+/* Sur un baobab
+ *
+ * /sass/components/_footer.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.footer {
+  height: 450px;
+  background: url("../../assets/img/footer-bg.png");
+  background-size: cover;
+  color: #ffffff; }
+  .footer-col {
+    display: inline-block;
+    padding-top: 40px;
+    vertical-align: top; }
+    .footer-col__right {
+      text-align: right; }
+  .footer__infos {
+    width: 1000px;
+    margin: 0 auto; }
+  .footer__heading, .footer .footer__link {
+    text-decoration: none;
+    color: #ffffff;
+    display: block; }
+  .footer__heading {
+    display: inline-block;
+    font-family: "Didact Gothic", "Calibri", "Optima", Arial, sans-serif;
+    font-size: 28px;
+    margin: 30px 0 10px; }
+    .footer__heading-top {
+      vertical-align: top; }
+  .footer__heading:hover {
+    color: #2a2a2a;
+    transition: .3s ease-in; }
+  .footer__link {
+    width: 330px;
+    display: inline-block; }
+  .footer__link:hover {
+    color: #2a2a2a;
+    transition: .3s ease-in; }
+  .footer__text--mail {
+    padding-bottom: 10px; }
+  .footer__socials {
+    display: inline-block;
+    margin-top: 105px; }
+    .footer__socials--link {
+      font-size: 35px;
+      text-decoration: none;
+      color: #ffffff;
+      padding: 0 5px;
+      font-family: 'Glyphs'; }
+    .footer__socials--link:hover {
+      color: #2a2a2a;
+      transition: .3s ease-in; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_subnav.scss
+ *
+ * coded by Anne
+ * started at 29/04/2016
+ */
+.subnav__link {
+  text-decoration: none;
+  color: #2a2a2a;
+  text-transform: uppercase;
+  font-family: "Didact Gothic", "Calibri", "Optima", Arial, sans-serif;
+  font-size: 1.111em;
+  /*20px*/
+  padding: 1.111em;
+  border-radius: 10px;
+  box-shadow: -2px -2px 1px 0px rgba(0, 0, 0, 0.3); }
+
+.subnav__link:hover {
+  background: rgba(243, 148, 21, 0.5); }
+
+/* Sur un baobab
+ *
+ * /sass/components/_about-who.scss
+ *
+ * coded by Anne
+ * started at 29/04/2016
+ */
+.who__left {
+  width: 48.5%;
+  /*485/1000*100*/
+  float: left; }
+
+.who__right {
+  width: 48.5%;
+  /*485/1000*100*/
+  float: right; }
+
+.subsection__cadre {
+  margin-bottom: 1.666em;
+  /*30px*/ }
+
+.subsection__img {
+  width: 149px;
+  height: auto;
+  border: 4px solid #52853e;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: bottom; }
+
+.subsection__heading {
+  font-family: "Didact Gothic", "Calibri", "Optima", Arial, sans-serif;
+  font-size: 1.444em;
+  /*20px*/
+  display: inline-block;
+  width: 11.5%;
+  /*115px*/
+  vertical-align: bottom;
+  margin-left: 2%;
+  line-height: 1.2; }
+
+.subsection__text {
+  margin-bottom: 1.666em; }
+
+.subsection__link {
+  text-decoration: none;
+  color: #2a2a2a; }
+
+.subsection__link:hover {
+  text-decoration: underline; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_about-what.scss
+ *
+ * coded by Anne
+ * started at 29/04/2016
+ */
+.what {
+  background: #ecce9a url("../../assets/img/motif-section.png") left top no-repeat; }
+  .what__content {
+    width: 71%;
+    margin: 0 auto; }
+  .what__top-left {
+    width: 48.4%;
+    float: left; }
+  .what__top-right {
+    width: 48.4%;
+    float: right;
+    margin-left: 3.2%; }
+  .what__bottom-left {
+    width: 48.4%;
+    float: left; }
+  .what__bottom-right {
+    width: 48.4%;
+    float: right;
+    margin-left: 3.2%; }
+  .what__text {
+    margin-bottom: 1.388em;
+    /*25px*/ }
+  .what__figure {
+    display: block;
+    width: 48.5%;
+    /*485px*/
+    margin: 0 auto;
+    padding: 1.388em 0; }
+    .what__figure--img {
+      width: 100%;
+      height: auto;
+      text-align: center; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_about-pictures.scss
+ *
+ * coded by Anne
+ * started at 29/04/2016
+ */
+.pictures {
+  position: relative;
+  margin-bottom: 11.5em; }
+  .pictures__gallery {
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    position: relative; }
+  .pictures__nav {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: .25em;
+    text-decoration: none;
+    color: #f39415;
+    font-size: 4em;
+    border: none;
+    background: transparent;
+    cursor: pointer; }
+  .pictures__previous {
+    left: -5%;
+    z-index: 3; }
+  .pictures__next {
+    right: -5%; }
+  .pictures__cadre {
+    width: 200%;
+    display: inline-block;
+    position: relative;
+    left: 0; }
+  .pictures__pics {
+    display: inline; }
+    .pictures__pics--img {
+      width: 311px;
+      height: auto; }
+  .pictures__pics:not(:last-child) {
+    margin-right: 1.777em; }
+  .pictures__button {
+    width: 46.5%;
+    margin-top: 2.222em;
+    position: absolute;
+    right: 0; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_about-partners.scss
+ *
+ * coded by Anne
+ * started at 29/04/2016
+ */
+.partners {
+  background: #ecce9a url("../../assets/img/motif-section-droite.png") right top no-repeat; }
+  .partners__content {
+    width: 71%;
+    margin: 0 auto; }
+  .partners__logos {
+    width: 100%; }
+    .partners__logos--item {
+      display: inline-block;
+      width: 13.9%;
+      line-height: 2em; }
+    .partners__logos--item + .partners__logos--item {
+      margin-left: 1.2em;
+      margin-bottom: 2em; }
+  .partners__logo {
+    text-align: center;
+    background: #2a2a2a;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2em;
+    padding: .5em;
+    width: 100%; }
+
+/*# sourceMappingURL=styles.css.map */

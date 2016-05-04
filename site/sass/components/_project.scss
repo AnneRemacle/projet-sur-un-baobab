@@ -1,0 +1,29 @@
+/* Sur un baobab
+ *
+ * /sass/components/_project.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+
+ .project {
+     &__heading {
+         display: block;
+     }
+     &__video {
+        display: inline-block;
+        width: 49%; /*490px*/
+        vertical-align: middle;
+     }
+     &__title {
+        display: block;
+        font-size: 1.388em; /*25px*/
+        font-family: $didactStack;
+        margin-top: 0.833em; /*15/18*/
+     }
+     &__button {
+         width: 46.5%;
+        vertical-align: middle;
+        margin-left: 3.2%; /*32px*/
+     }
+ }
