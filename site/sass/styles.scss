@@ -42,6 +42,12 @@
 
 @import "components/projects";
 
+@import "components/single-project";
+    @import "components/single-project-movie";
+    @import "components/single-project-project";
+    @import "components/single-project-making";
+    @import "components/single-project-technicals";
+
 @import "components/help";
 
 @import "components/contact";

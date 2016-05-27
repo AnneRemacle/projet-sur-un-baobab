@@ -1,0 +1,24 @@
+/* Sur un baobab
+ *
+ * /sass/components/_single-project-movie.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+
+ .movie {
+     &__video {
+        width: 80%;
+        margin: 0 auto 2.22em;
+        display: block;
+     }
+     &__synopsis {
+         width: 50%;
+         margin: 0 auto;
+         &--title {
+             font-family: $didactStack;
+             font-size: 1.2em;
+             margin-bottom: 0.8em;
+         }
+     }
+ }

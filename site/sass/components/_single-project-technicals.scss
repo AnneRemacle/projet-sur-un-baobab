@@ -1,0 +1,31 @@
+/* Sur un baobab
+ *
+ * /sass/components/_single-project-technicals.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+
+ .technicals {
+     &__table {
+
+     }
+ }
+
+ .table {
+     width: 80%;
+     &__row {
+
+     }
+     &__row:nth-child(even) {
+         background: rgba(234,149,63, 0.6);
+     }
+     &__info {
+         width: 60%;
+         padding: 1em 0;
+         &--title {
+            text-align:left;
+            padding-left: 0.5em;
+         }
+     }
+ }

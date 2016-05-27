@@ -1,0 +1,33 @@
+/* Sur un baobab
+ *
+ * /sass/components/_single-project.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.subnav {
+    margin-bottom: 2.22em;
+}
+ .content {
+     &__heading {
+         width: 71%;
+         margin: 0 auto;
+     }
+     &__section {
+         width: 71%;
+         margin: 0 auto;
+         padding: 4.44em 0;
+     }
+ }
+
+ .section {
+     &__heading {
+         font-family: $didactStack;
+         font-size: 1.5em;
+         margin-bottom: 1.5em;
+     }
+ }
+
+ .div-single-project, .div-technicals {
+     background: $secondBg url("../assets/img/motif-section.png") left top no-repeat;
+ }

@@ -159,6 +159,9 @@ body {
   .header-contact {
     background: transparent url("../assets/img/bg-contact.jpg") center no-repeat;
     margin-bottom: 8em; }
+  .header-single-project {
+    background: transparent url("../assets/img/bg-single-project.jpg") center no-repeat;
+    margin-bottom: 8em; }
   .header__logo {
     width: 20%;
     /*280px*/
@@ -699,6 +702,124 @@ body {
   .cta__button {
     display: block;
     text-align: center; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_single-project.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.subnav {
+  margin-bottom: 2.22em; }
+
+.content__heading {
+  width: 71%;
+  margin: 0 auto; }
+
+.content__section {
+  width: 71%;
+  margin: 0 auto;
+  padding: 4.44em 0; }
+
+.section__heading {
+  font-family: "Didact Gothic", "Calibri", "Optima", Arial, sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1.5em; }
+
+.div-single-project, .div-technicals {
+  background: #ecce9a url("../assets/img/motif-section.png") left top no-repeat; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_single-project-movie.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.movie__video {
+  width: 80%;
+  margin: 0 auto 2.22em;
+  display: block; }
+
+.movie__synopsis {
+  width: 50%;
+  margin: 0 auto; }
+  .movie__synopsis--title {
+    font-family: "Didact Gothic", "Calibri", "Optima", Arial, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 0.8em; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_single-project-project.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.single-project__text {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 0.8em; }
+  .single-project__text--strong {
+    font-weight: 600;
+    margin-bottom: 0.8em; }
+
+.single-project__figure {
+  width: 75%;
+  margin: 2em auto; }
+
+.single-project__img {
+  width: 100%; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_single-project-making.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.making__part {
+  margin-bottom: 3em; }
+
+.making__figure {
+  width: 33.33%;
+  /*300px*/
+  display: inline-block;
+  margin: 0 3%;
+  vertical-align: middle; }
+
+.making__img {
+  width: 100%; }
+
+.making__explain {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle; }
+
+.making__text {
+  margin-bottom: 0.8em; }
+  .making__text--strong {
+    font-weight: 600;
+    margin-bottom: 0.8em; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_single-project-technicals.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.table {
+  width: 80%; }
+  .table__row:nth-child(even) {
+    background: rgba(234, 149, 63, 0.6); }
+  .table__info {
+    width: 60%;
+    padding: 1em 0; }
+    .table__info--title {
+      text-align: left;
+      padding-left: 0.5em; }
 
 /* Sur un baobab
  *
