@@ -99,12 +99,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* CV Anne
+/* Portfolio
  *
  * /sass/generic/_box-sizing.scss - box-sizing reset
  *
  * coded by Anne
- * started at 3/04/2016
+ * started at 10/05/2016
  */
 html {
   -webkit-box-sizing: border-box;
@@ -142,31 +142,30 @@ body {
   height: 27.777em;
   /* 500/18 */
   position: relative;
-  font-family: "Didact Gothic", "Calibri", "Optima", Arial, sans-serif; }
+  font-family: "Didact Gothic", "Calibri", "Optima", Arial, sans-serif;
+  margin-bottom: 5em; }
   .header-home {
-    background: transparent url("../../assets/img/bg-home.jpg") center no-repeat; }
+    background: transparent url("../assets/img/bg-home.jpg") center no-repeat; }
   .header-about {
-    background: transparent url("../../assets/img/bg-about.jpg") center no-repeat; }
+    background: transparent url("../assets/img/bg-about.jpg") center no-repeat;
+    margin-bottom: 8em; }
+  .header-projects {
+    background: transparent url("../assets/img/bg-projects.jpg") center no-repeat;
+    margin-bottom: 8em; }
   .header__logo {
     width: 20%;
     /*280px*/
     border-radius: 100%;
-    position: relative;
-    z-index: 3;
-    top: 5.55em;
-    left: 10%;
-    /*28px*/ }
+    position: absolute;
+    bottom: -140px;
+    left: 500px;
+    z-index: 3; }
     .header__logo--img {
       width: 100%;
       height: auto; }
   .header__nav {
-    background: #ff9500;
     width: 100%;
-    height: 7.388em;
-    /*133/18*/
-    text-align: right;
-    padding-right: 14.28%;
-    /*200px*/
+    text-align: center;
     position: absolute;
     top: 9.722em;
     /*175/18*/ }
@@ -174,17 +173,14 @@ body {
       display: inline-block;
       text-decoration: none;
       color: white;
+      margin: 0 1.3em;
+      padding-bottom: 0.6em;
       font-size: 1.388em;
       /*25/18*/
-      line-height: 6em;
-      /*133px*/
-      width: 12.357%;
-      /*173px*/
       text-align: right;
       text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.7); }
     .header__nav--item:hover {
-      background: url("../../assets/img/mandala-vert.png") no-repeat;
-      background-position: right top;
+      border-bottom: 2px solid #ff9500;
       transition: .3s ease-in-out; }
   .header__button {
     display: inline-block;
@@ -199,7 +195,7 @@ body {
     bottom: 0;
     right: 2%; }
   .header__button:hover {
-    background: #ff9500 url("../../assets/img/mandala-vert.png") no-repeat;
+    background: #ff9500 url("../assets/img/mandala-vert.png") no-repeat;
     background-position: right top;
     transition: .3s ease-in-out; }
 
@@ -234,7 +230,7 @@ body {
     font-size: 2em;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.7); }
   .content__section--button:hover {
-    background: #52853e url("../../assets/img/mandala-button.png") no-repeat;
+    background: #52853e url("../assets/img/mandala-button.png") no-repeat;
     background-position: right top;
     background-size: contain;
     color: #ffffff;
@@ -278,6 +274,10 @@ body {
   /*350/1000*100*/
   height: auto;
   float: right; }
+
+.group__img {
+  display: block;
+  width: 100%; }
 
 /* Sur un baobab
  *
@@ -338,7 +338,7 @@ body {
  * started at 26/04/2016
  */
 .support {
-  background: url("../../assets/img/bg-support.jpg") center no-repeat;
+  background: url("../assets/img/bg-support.jpg") center no-repeat;
   background-size: cover;
   height: 36.111em;
   /*650px*/ }
@@ -400,7 +400,7 @@ body {
  */
 .footer {
   height: 450px;
-  background: url("../../assets/img/footer-bg.png");
+  background: url("../assets/img/footer-bg.png");
   background-size: cover;
   color: #ffffff; }
   .footer-col {
@@ -526,7 +526,7 @@ body {
  * started at 29/04/2016
  */
 .what {
-  background: #ecce9a url("../../assets/img/motif-section.png") left top no-repeat; }
+  background: #ecce9a url("../assets/img/motif-section.png") left top no-repeat; }
   .what__content {
     width: 71%;
     margin: 0 auto; }
@@ -615,7 +615,7 @@ body {
  * started at 29/04/2016
  */
 .partners {
-  background: #ecce9a url("../../assets/img/motif-section-droite.png") right top no-repeat; }
+  background: #ecce9a url("../assets/img/motif-section-droite.png") right top no-repeat; }
   .partners__content {
     width: 71%;
     margin: 0 auto; }
@@ -636,5 +636,59 @@ body {
     font-size: 2em;
     padding: .5em;
     width: 100%; }
+
+/* Sur un baobab
+ *
+ * /sass/components/_projects.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+.projects__heading {
+  width: 71%;
+  margin: 0 auto; }
+
+.one-project__content {
+  width: 71%;
+  margin: 0 auto;
+  padding: 4.44em 0; }
+
+.one-project__video {
+  display: inline-block;
+  width: 49%;
+  margin-right: 1.777em;
+  /*32px*/
+  vertical-align: top;
+  float: left; }
+
+.one-project__heading {
+  margin-bottom: 1.5em;
+  font-size: 1.388em;
+  /*25px*/
+  font-family: "Didact Gothic", "Calibri", "Optima", Arial, sans-serif; }
+
+.one-project__infos {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  float: right; }
+
+.one-project__text--year {
+  margin-bottom: 4em; }
+
+.one-project__button {
+  display: inline-block;
+  width: 90%; }
+
+.one-project:nth-child(odd) {
+  background: #ecce9a url("../assets/img/motif-section.png") left top no-repeat; }
+
+.cta {
+  width: 35%;
+  margin: 0 auto;
+  padding: 2.22em 0; }
+  .cta__button {
+    display: block;
+    text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,65 @@
+/* Sur un baobab
+ *
+ * /sass/components/_projects.scss
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+
+ .projects {
+     &__heading {
+         width: 71%;
+         margin: 0 auto;
+         //margin-bottom: 2.22em; /*40px/18*/
+     }
+ }
+
+ .one-project {
+     &__content {
+        width: 71%;
+        margin: 0 auto;
+        padding: 4.44em 0;
+     }
+     &__video {
+        display: inline-block;
+        width: 49%;
+        margin-right: 1.777em; /*32px*/
+        vertical-align: top;
+        float:left;
+     }
+
+     &__heading {
+        margin-bottom: 1.5em;
+        font-size: 1.388em; /*25px*/
+        font-family: $didactStack;
+     }
+     &__infos {
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+        float:right;
+     }
+     &__text {
+         &--year {
+             margin-bottom: 4em;
+         }
+     }
+     &__button {
+        display: inline-block;
+        width: 90%;
+     }
+ }
+
+ .one-project:nth-child(odd) {
+     background: $secondBg url("../assets/img/motif-section.png") left top no-repeat;
+ }
+
+ .cta {
+     width: 35%;
+     margin: 0 auto;
+     padding: 2.22em 0;
+     &__button {
+        display: block;
+        text-align: center;
+     }
+ }

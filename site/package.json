@@ -1,9 +1,9 @@
 {
-  "name": "modus-versus-slicing",
+  "name": "sur-un-baobab",
   "version": "0.0.1",
   "private": true,
-  "description": "Sliced ITCSS/BEM version of the homepage from Modus Versus",
-  "author": "leny <pierre-antoine@delnatte.be>",
+  "description": "Sur un Baobab",
+  "author": "Anne",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-browser-sync": "^2.2.0",
