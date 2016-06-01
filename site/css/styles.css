@@ -714,11 +714,9 @@ body {
   margin-bottom: 2.22em; }
 
 .content__heading {
-  width: 71%;
   margin: 0 auto; }
 
 .content__section {
-  width: 71%;
   margin: 0 auto;
   padding: 4.44em 0; }
 
@@ -729,6 +727,11 @@ body {
 
 .div-single-project, .div-technicals {
   background: #ecce9a url("../assets/img/motif-section.png") left top no-repeat; }
+
+.see-all__button {
+  display: block;
+  width: 40%;
+  margin: 2em auto; }
 
 /* Sur un baobab
  *

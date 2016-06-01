@@ -10,11 +10,9 @@
 }
  .content {
      &__heading {
-         width: 71%;
          margin: 0 auto;
      }
      &__section {
-         width: 71%;
          margin: 0 auto;
          padding: 4.44em 0;
      }
@@ -30,4 +28,12 @@
 
  .div-single-project, .div-technicals {
      background: $secondBg url("../assets/img/motif-section.png") left top no-repeat;
+ }
+
+ .see-all {
+     &__button {
+         display: block;
+         width: 40%;
+         margin: 2em auto;
+     }
  }
